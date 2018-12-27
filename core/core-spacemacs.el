@@ -81,7 +81,7 @@ the final step of executing code in `emacs-startup-hook'.")
   ;; - once at the very beginning of startup (here)
   ;; - once at the very end of loading (in `spacemacs/setup-startup-hook')
   ;; The first application of custom settings is to be sure that Emacs knows all
-  ;; the defined settings before saving them to a file (otherwise we loose all
+  ;; the defined settings before saving them to a file (otherwise we lose all
   ;; the settings that Emacs does not know of).
   ;; The second application is to override any setting set in dotfile functions
   ;; like `dotspacemacs/user-config`, users expect the custom settings to be the
