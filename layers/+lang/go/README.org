@@ -113,11 +113,8 @@ To enable the LSP backend set the layer variable =go-backend=:
   (go :variables go-backend 'lsp)
 #+END_SRC
 
-You also need to install the Go Language Server:
-
-#+BEGIN_SRC sh
-  go get -u github.com/sourcegraph/go-langserver
-#+END_SRC
+You also need to install the Go Language Server.
+Consult the installation command for the desired language server found at [[https://www.github.com/emacs-lsp/lsp-mode/][lsp-mode]] for instructions.
 
 Backend can be chosen on a per project basis using directory local variables
 (files named =.dir-locals.el= at the root of a project), an example to use the
@@ -273,14 +270,14 @@ You have a few options to ensure you always get up to date suggestions:
 
 ** Refactoring
 
-| Key binding | Description                                                    |
-|-------------+----------------------------------------------------------------|
-| ~SPC m r d~ | Add comment stubs                                              |
-| ~SPC m r e~ | Extract code as new function                                   |
-| ~SPC m r f~ | Add field tags                                                 |
-| ~SPC m r F~ | Remove field tags                                              |
-| ~SPC m r i~ | Generate method subs for implementing an interface (=go-impl=) |
-| ~SPC m r n~ | Rename (with =godoctor=)                                       |
-| ~SPC m r N~ | Rename (with =go-rename=)                                      |
-| ~SPC m r s~ | Fill structure with default values                             |
-| ~SPC m r t~ | Toggle declaration and assignment                              |
+| Key binding | Description                                                     |
+|-------------+-----------------------------------------------------------------|
+| ~SPC m r d~ | Add comment stubs                                               |
+| ~SPC m r e~ | Extract code as new function                                    |
+| ~SPC m r f~ | Add field tags                                                  |
+| ~SPC m r F~ | Remove field tags                                               |
+| ~SPC m r i~ | Generate method stubs for implementing an interface (=go-impl=) |
+| ~SPC m r n~ | Rename (with =godoctor=)                                        |
+| ~SPC m r N~ | Rename (with =go-rename=)                                       |
+| ~SPC m r s~ | Fill structure with default values                              |
+| ~SPC m r t~ | Toggle declaration and assignment                               |
